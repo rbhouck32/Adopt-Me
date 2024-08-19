@@ -1,7 +1,17 @@
 import { useState, useEffect } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import Results from "./Results.jsx"
 import useBreedList from "./useBreedList.js";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: Infinity,
+      cacheTime: Infinity,
+    },
+  },
+});
 
 const SearchParams = () => {
   //Created an Array for our preset list of available breeds.
