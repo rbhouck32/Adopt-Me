@@ -21,6 +21,8 @@ const Details = () => {
     return (
             <div className="details">
               <div>
+                {console.log(`this is the pet info`, pet)}
+                <div className="pet_details_image_container"><img alt={`Here you can see ${pet.name}`} src={pet.images[0]}/></div>
                 <h1>{pet.name}</h1>
                 <h2>{`${pet.animal} — ${pet.breed} — ${pet.city}, ${pet.state}`}</h2>
                 <button>Adopt {pet.name}</button>

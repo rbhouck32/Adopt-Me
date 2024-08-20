@@ -78,7 +78,7 @@ const SearchParams = () => {
           >
             <option />
             {breeds.map((breed) => (
-              <option key={breed} value={breed}>
+              <option id={`breed_option_${breed.id}`} key={breed} value={breed}>
                 {breed}
               </option>
             ))}

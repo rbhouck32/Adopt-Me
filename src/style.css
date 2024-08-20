@@ -58,6 +58,13 @@
     width: 100px;
     min-height: 100px;
   }
+
+  .pet_details_image_container {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+
+  }
   
   .info {
     float: left;
